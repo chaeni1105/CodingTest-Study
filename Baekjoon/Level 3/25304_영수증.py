@@ -7,6 +7,8 @@
 #         + A리스트와 B리스트를 빈 공간으로 생성해준다.
 # 2단계 : N만큼 반복하는 for문 안에서 a와 b를 곱해서 총 금액 sum을 X와 비교하여 Yes/No를 출력한다.
 
+import sys
+input = sys.stdin.readline
 
 # 1단계
 X = int(input())

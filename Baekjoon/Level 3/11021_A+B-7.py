@@ -6,6 +6,8 @@
 # 1단계 : 테스트 케이스의 개수 T와, 두 정수 A와 B를 반복적으로 for문을 활용하여 입력받는다.
 # 2단계 : for문을 활용하여 T만큼 돌리고, 반복적으로 A와 B를 더해서 출력해낸다.
 
+import sys
+input = sys.stdin.readline
 
 # 1단계
 T = int(input())

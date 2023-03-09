@@ -6,6 +6,8 @@
 # 1단계 : 무한으로 A와 B를 입력받고, A+B를 계속 출력해낸다.
 # 2단계 : try-except문을 활용하여 테스트 케이스가 들어오지 않을 때, while문을 종료시킨다.
 
+import sys
+input = sys.stdin.readline
 
 # 1단계
 while(True):

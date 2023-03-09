@@ -6,6 +6,8 @@
 # 1단계 : N을 입력받는다.
 # 2단계 : for문을 활용하여 N단을 형식에 맞춰 출력한다.
 
+import sys
+input = sys.stdin.readline
 
 # 1단계
 N = int(input())

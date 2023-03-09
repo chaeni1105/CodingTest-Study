@@ -7,6 +7,8 @@
 # 2단계 : 4byte에 long int 가 출력되고, 20byte에 long*5 int가 출력된다. 이말은 즉슨, N//4를 해서 나온 몫만큼 long이 출력되는것이다.
 #        N//4만큼 for문을 돌려 long을 출력해보자.
 
+import sys
+input = sys.stdin.readline
 
 # 1단계
 N = int(input())

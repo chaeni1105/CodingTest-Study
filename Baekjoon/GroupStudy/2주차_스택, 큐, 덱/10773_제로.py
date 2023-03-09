@@ -8,6 +8,8 @@
 #        만약 정수가 0일경우 pop()함수로 스택에 가장 최근에 들어갔던 정수를 지운다.
 # 3단계 : stack안에 들어있는 모든 정수들을 더한 총합을 출력한다.
 
+import sys
+input = sys.stdin.readline
 
 # 1단계
 K = int(input())

@@ -6,6 +6,8 @@
 # 1단계 : 두 정수 A와 B를 반복적으로 입력받는다. (무한 반복)
 # 2단계 : A와 B에 0 0 이 들어올 때까지 계속 반복하여 출력한다.
 
+import sys
+input = sys.stdin.readline
 
 # 1단계
 while(True):

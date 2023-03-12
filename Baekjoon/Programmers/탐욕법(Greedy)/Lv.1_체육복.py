@@ -7,13 +7,6 @@
 # 2단계 : 
 # 3단계 :
 
-
-# 1단계
-
-
-# 2단계
-
-# 3단계
-
-    
-# 주의할 점
+def solution(n, lost, reserve):
+    answer = 0
+    return answer

@@ -14,11 +14,11 @@ def solution(n, lost, reserve):
     for i in range(0, len(reserve)):
             if((reserve[i] - 1) in lost):
                 answer += 1
-                lost.remove(reserve[i] - 1)
+                lost.remove((reserve[i] - 1))
 
             elif((reserve[i] + 1) in lost):
                 answer += 1
-                lost.remove(reserve[i] + 1)
+                lost.remove((reserve[i] + 1))
 
             else:
                 pass

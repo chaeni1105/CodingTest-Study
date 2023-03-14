@@ -13,12 +13,13 @@ def solution(n, lost, reserve):
     
     # 1단계
     #여벌 체육복을 가져온 학생이 체육복을 도난당했을 수 있기 때문에, reserve와 lost값은 중복이 되면 안된다.
-    for i in range(len(reserve)):
-        if (reserve[i] in lost): #reserve[i]값이 lost리스트 안에 몇개나 있는지 확인(1이상이면 True 0이면 False)
-            reserve.remove(reserve[i])
-            lost.remove(reserve[i])
-    # new_lost = set(lost) - set(reserve)
-    # new_reserve = set(reserve) - set(lost)
+    # for i in range(len(reserve)):
+    #     if (reserve[i] in lost): #reserve[i]값이 lost리스트 안에 몇개나 있는지 확인(1이상이면 True 0이면 False)
+    #         reserve.remove(reserve[i])
+    #         lost.remove(reserve[i])
+    
+    new_lost = set(lost) - set(reserve)
+    new_reserve = set(reserve) - set(lost)
     
     # 질문 1 : 굳이 new_lost에 저장해야하는 이유는???
     # 질문 2 : set이랑 똑같이 동작하는 반복문 코드는 없을까?
@@ -39,6 +40,8 @@ def solution(n, lost, reserve):
     answer = n - len(lost)
         
     return answer
+
+
 
 # 주의할 점
 # 1. 중복되는 번호는 없다.

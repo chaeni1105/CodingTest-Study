@@ -10,14 +10,22 @@
 
 import sys
 input = sys.stdin.readline
+answer = []
 
 # 1단계
 N, M = map(int, input().split())
-
+for i in range(N):
+    answer.append(i+1)
+for i in range(M):
+    i, j = map(int, input().split())
+    answer[i-1:j] = answer[i-1:j][::-1]
+    
 
 # 2단계
 for i in range(N):
-    print(answer[i], "", end='')
-
+    print(answer[i], "", end='') #for문 대신 print(*answer) 하면 리스트 내 원소를 하나씩 출력해준다.
     
 # 주의할 점
+# 특정한 범위에 들어있는 배열순서를 역순으로 바꾸려면 answer[i-1:j] = answer[i-1:j][::-1]를 참고하자.
+# 만약 1부터 3번 바구니를 3,2,1로 바꾸려면
+# answer[0:3] = answer[0:3][::-1] 하면 된다! 그럼 0,1,2인덱스가 2,1,0으로 바뀌면서 특정 구간의 바구니의 순서가 역순으로 바뀌게 된다.

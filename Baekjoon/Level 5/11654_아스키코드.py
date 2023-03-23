@@ -12,6 +12,3 @@ str_ = input()
 
 # 2단계
 print(ord(str_))
-
-    
-# 주의할 점

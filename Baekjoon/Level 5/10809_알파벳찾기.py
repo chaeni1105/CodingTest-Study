@@ -7,6 +7,8 @@
 # 2단계 : 만약 in S라면, S의 몇번째 자리에 위치하는지 출력한다.(index함수 활용)
 # 3단계 :
 
+import sys
+input = sys.stdin.readline
 
 # 1단계
 S = input()

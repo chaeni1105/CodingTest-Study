@@ -6,6 +6,8 @@
 # 1단계 : 첫째 줄에 숫자의 개수 N을 입력받는다. 둘째줄에는 문자열의 형태로 숫자를 입력받는다.
 # 2단계 : N만큼 반복한는 for문 안에 문자열을 리스트 취급하여 전부 더한다.
 
+import sys
+input = sys.stdin.readline
 
 # 1단계
 N = int(input())

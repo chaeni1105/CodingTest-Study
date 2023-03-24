@@ -23,9 +23,9 @@ for i in range(len(S)):
 print(cnt)
     
     
-# 다른 풀이
-# splitList = S.split() # ['The', 'Curious', 'Case', 'of', 'Benjamin', 'Button']
-# len(splitList) # 6개 !!!
+#다른 풀이
+splitList = S.split() # ['The', 'Curious', 'Case', 'of', 'Benjamin', 'Button']
+print(len(splitList)) # 6개 !!!
 # -> split()함수를 사용해서 리스트에 6개의 단어를 넣고 리스트의 길이를 print하면 된다.
     
     
@@ -34,3 +34,5 @@ print(cnt)
 
 # 2. 또한 문자열은 공백으로 시작하거나 끝날 수 있다. 라는 조건을 주의깊게 보아야한다.
 #    이 조건때문에 양측 공백을 제거하는 strip()함수가 필요하기 때문이다.
+
+# 아니 내 풀이가 왜 틀린거지? ㅁㄴㄹ어ㅏㅣㄴ어라ㅣㄷ너럼넝라ㅣㅓㅁㄴㅇ럼너린아ㅓㅏㅣ어ㅏㅣ어럼라ㅣㅓ리나ㅓ리ㅓㅇ ㅠㅠㅠㅠㅠ

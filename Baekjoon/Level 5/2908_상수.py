@@ -10,12 +10,33 @@ import sys
 input = sys.stdin.readline
 
 # 1단계
-
+sanggeun = list(map(str, input().split()))
 
 # 2단계
-
-
-# 3단계
-
+sangsu = []
+for i in range(len(sanggeun)):
+    sangsu.append(int(sanggeun[i][::-1]))
+    
+print(max(sangsu))
+    
     
 # 주의할 점
+# 1. sanggeun[::-1]을 하여 [437, 398]이 되려면,
+#    for문 안에서 차례로 437, 398 2번에 거쳐서 바꿔야한다.
+# 2. 이때, TypeError: 'int' object is not subscriptable로, 타입에러가 발생한다.
+#    이는 숫자를 [::-1] 연산자로 지정했기 때문이고, 숫자 타입은 문자열처럼 분리해서 사용할 수 없다.
+#    따라서, 먼저 문자열로 변환을 하고 마지막에 int형으로 바꿔야한다.
+
+# 참고할 점
+# 1. reverse() 함수는 아이템들을 역순으로 뒤집는 함수이다.
+# ['당근', '오이', '양파'] -> ['양파', '오이', '당근] 이렇게!
+
+# 2.
+# x = [12,34,56]
+# for i in range(len(x)):
+#     print(x[i][::-1])
+#위와 같은 코드는 타입에러가 난다. int타입은 [::-1] 연산자로 지정이 안되기 때문이다.
+#그런데 만약 아래 코드를 실행시킬 시,
+# x = [12,34,56]
+# print(x[::-1])
+# [56, 34, 12] 라는 결과가 나온다. 이는 인덱스 순서를 바꾸는것이지, 거꾸로 하나의 인덱스를 바꿔줄 순 없다는 것을 확인할 수 있다.

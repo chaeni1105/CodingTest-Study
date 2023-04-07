@@ -7,6 +7,8 @@
 # 2단계 : 
 # 3단계 :
 
+import sys
+input = sys.stdin.readline
 
 # 1단계
 

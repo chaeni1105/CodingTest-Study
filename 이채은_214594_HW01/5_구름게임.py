@@ -43,7 +43,6 @@ class Game():
     # 게임이 끝났는지 확인하는 함수 
     def win_condition(self, board):
         # 리턴값 0: 컴퓨터 승리 / 1: 플레이어 승리 / 2: 승패 결정 X 
-        
         for player in ['X', 'O']:
             # 가로줄 검사
             for i in range(size):

@@ -1,5 +1,3 @@
-
-
 f = open("linear_regression.txt",'r') # linear_regression.txt 파일을 읽기 전용으로 open
 lines = f.readlines() # 모든 라인의 데이터를 load
 

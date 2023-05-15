@@ -22,6 +22,5 @@ else:
 #     print("1")
 # else:
 #     print("0")
-
 # ~이면서 = and
 # 또는 = or

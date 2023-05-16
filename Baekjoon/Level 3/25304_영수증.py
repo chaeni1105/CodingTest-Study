@@ -26,7 +26,6 @@ sum = 0
 # 2단계
 for i in range(0, N):
     sum += A[i]*B[i]
-    
 if(sum == X):
     print("Yes")
 else:
